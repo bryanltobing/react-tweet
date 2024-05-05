@@ -1,9 +1,9 @@
 <script lang="ts">
   import clsx from 'clsx'
-  import AvatarImg from './avatar-img.svelte'
-  import s from '../../../../../../packages/react-tweet/src/twitter-theme/quoted-tweet/quoted-tweet-header.module.css'
-  import type { EnrichedQuotedTweet } from '../../../../../../packages/react-tweet/src/utils.js'
-  import VerifiedBadge from './verified-badge.svelte'
+  import AvatarImg from '../avatar-img.svelte'
+  import s from '../../../../../../../packages/react-tweet/src/twitter-theme/quoted-tweet/quoted-tweet-header.module.css'
+  import type { EnrichedQuotedTweet } from '../../../../../../../packages/react-tweet/src/utils.js'
+  import VerifiedBadge from '../verified-badge.svelte'
 
   export let tweet: EnrichedQuotedTweet
 

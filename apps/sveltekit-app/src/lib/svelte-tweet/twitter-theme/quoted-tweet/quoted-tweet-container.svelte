@@ -1,6 +1,6 @@
 <script lang="ts">
-  import type { EnrichedQuotedTweet } from '../../../../../../packages/react-tweet/src/utils.js'
-  import s from '../../../../../../packages/react-tweet/src/twitter-theme/quoted-tweet/quoted-tweet-container.module.css'
+  import type { EnrichedQuotedTweet } from '../../../../../../../packages/react-tweet/src/utils.js'
+  import s from '../../../../../../../packages/react-tweet/src/twitter-theme/quoted-tweet/quoted-tweet-container.module.css'
   export let tweet: EnrichedQuotedTweet
 
   function handleKeyDown(event: KeyboardEvent) {
