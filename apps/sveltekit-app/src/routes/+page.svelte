@@ -9,6 +9,7 @@
   import TweetInfo from '$lib/svelte-tweet/twitter-theme/tweet-info.svelte'
   import TweetActions from '$lib/svelte-tweet/twitter-theme/tweet-actions.svelte'
   import TweetReplies from '$lib/svelte-tweet/twitter-theme/tweet-replies.svelte'
+  import QuotedTweet from '$lib/svelte-tweet/twitter-theme/quoted-tweet.svelte'
 
   export let data: PageData
   const tweet = enrichTweet(data.tweet)
@@ -23,6 +24,9 @@
     <TweetBody {tweet} />
     {#if tweet.mediaDetails?.length}
       <TweetMedia {tweet} />
+    {/if}
+    {#if tweet.quoted_tweet}
+      <QuotedTweet tweet={tweet.quoted_tweet} />
     {/if}
     <TweetInfo {tweet} />
     <TweetActions {tweet} />

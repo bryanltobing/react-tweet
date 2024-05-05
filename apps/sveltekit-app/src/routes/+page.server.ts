@@ -3,7 +3,7 @@ import { getTweet } from '../../../../packages/react-tweet/src/api'
 import type { PageServerLoad } from './$types'
 
 export const load: PageServerLoad = async () => {
-  const tweet = await getTweet('1784283247876431907')
+  const tweet = await getTweet('1786974230858621357')
   return {
     tweet,
   }
@@ -17,3 +17,5 @@ export const load: PageServerLoad = async () => {
 // https://twitter.com/steepymaroon46/status/1786064282305892532
 // Tweet with masukan konkret
 // https://x.com/prastow/status/1784283247876431907
+// Quoted tweet
+// https://x.com/bryanltobing/status/1786974230858621357
